@@ -1,2 +1,2 @@
-# reactphp-mutex-key-prefix
-Prefix mutex keys
+# reactphp-mutex-redis
+Redlock Mutex for wyrihaximus/react-mutex
