@@ -1,0 +1,40 @@
+{
+    "name": "wyrihaximus/react-mutex-key-prefix",
+    "description": "Mutex locking for ReactPHP projects using Redis",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "react/promise": "^2.8",
+        "thecodingmachine/safe": "^1.3",
+        "wyrihaximus/react-mutex": "^2.0",
+        "wyrihaximus/react-mutex-contracts": "^1.1"
+    },
+    "require-dev": {
+        "clue/redis-react": "^2.4",
+        "wyrihaximus/react-mutex-test-utilities": "^1.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.7"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "WyriHaximus\\React\\Mutex\\KeyPrefix\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WyriHaximus\\Tests\\React\\Mutex\\KeyPrefix\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer normalize"
+        ],
+        "post-update-cmd": [
+            "composer normalize"
+        ]
+    }
+}
