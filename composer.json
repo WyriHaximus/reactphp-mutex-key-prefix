@@ -1,6 +1,6 @@
 {
     "name": "wyrihaximus/react-mutex-key-prefix",
-    "description": "Mutex locking for ReactPHP projects using Redis",
+    "description": "ReactPHP Mutex Key Prefix",
     "license": "MIT",
     "require": {
         "php": "^7.4",
