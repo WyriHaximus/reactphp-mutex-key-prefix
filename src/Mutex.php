@@ -7,7 +7,6 @@ namespace WyriHaximus\React\Mutex\KeyPrefix;
 use React\Promise\PromiseInterface;
 use WyriHaximus\React\Mutex\Contracts\LockInterface;
 use WyriHaximus\React\Mutex\Contracts\MutexInterface;
-use WyriHaximus\React\Mutex\Lock;
 
 use function Safe\substr;
 use function strlen;
@@ -31,6 +30,16 @@ final class Mutex implements MutexInterface
          * @psalm-suppress TooManyTemplateParams
          */
         return $this->mutex->acquire($this->prefix . $key, $ttl)->then(
+            fn (?LockInterface $lock): ?LockInterface => $lock instanceof LockInterface ? new Lock(substr($lock->key(), $this->prefixLength), $lock->rng()) : $lock
+        );
+    }
+
+    public function spin(string $key, float $ttl, int $attempts, float $interval): PromiseInterface
+    {
+        /**
+         * @psalm-suppress TooManyTemplateParams
+         */
+        return $this->mutex->spin($this->prefix . $key, $ttl, $attempts, $interval)->then(
             fn (?LockInterface $lock): ?LockInterface => $lock instanceof LockInterface ? new Lock(substr($lock->key(), $this->prefixLength), $lock->rng()) : $lock
         );
     }
