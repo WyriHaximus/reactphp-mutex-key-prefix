@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfd97624cc8f77d8545cc01131b0a2a5",
+    "content-hash": "a6ffa14e68cf7bb146667af65f3047f0",
     "packages": [
         {
             "name": "react/promise",
@@ -8579,25 +8579,25 @@
         },
         {
             "name": "wyrihaximus/react-mutex",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-mutex.git",
-                "reference": "5e8a5c791f619aeac9448b90b54a446b6d32e222"
+                "reference": "6435b1c6fa824259d63fc2055368b13c0d67a819"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-mutex/zipball/5e8a5c791f619aeac9448b90b54a446b6d32e222",
-                "reference": "5e8a5c791f619aeac9448b90b54a446b6d32e222",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-mutex/zipball/6435b1c6fa824259d63fc2055368b13c0d67a819",
+                "reference": "6435b1c6fa824259d63fc2055368b13c0d67a819",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4",
+                "php": "^8 || ^7.4",
                 "react/cache": "^1.1",
                 "react/event-loop": "^1.2",
-                "react/promise": "^2.7",
+                "react/promise": "^2.8",
                 "wyrihaximus/constants": "^1.6",
-                "wyrihaximus/react-mutex-contracts": "^2",
+                "wyrihaximus/react-mutex-contracts": "^2.1",
                 "wyrihaximus/ticking-promise": "^3"
             },
             "require-dev": {
@@ -8616,7 +8616,7 @@
             "description": "Mutex locking for ReactPHP projects",
             "support": {
                 "issues": "https://github.com/WyriHaximus/reactphp-mutex/issues",
-                "source": "https://github.com/WyriHaximus/reactphp-mutex/tree/3.0.0"
+                "source": "https://github.com/WyriHaximus/reactphp-mutex/tree/3.1.0"
             },
             "funding": [
                 {
@@ -8624,7 +8624,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-14T21:11:27+00:00"
+            "time": "2021-10-23T13:05:08+00:00"
         },
         {
             "name": "wyrihaximus/react-mutex-test-utilities",

@@ -9,7 +9,7 @@
         "wyrihaximus/react-mutex-contracts": "^2"
     },
     "require-dev": {
-        "wyrihaximus/react-mutex": "^3.0",
+        "wyrihaximus/react-mutex": "^3.1",
         "wyrihaximus/react-mutex-test-utilities": "^2"
     },
     "config": {
